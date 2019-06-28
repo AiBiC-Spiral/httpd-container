@@ -1,5 +1,5 @@
 FROM            centos:7
-MAINTAINER      "My Name"
+LABEL           maintainer "My Name"
 RUN             yum update -y && yum clean all
 RUN             yum install -y httpd && yum clean all
 ADD             run-httpd.sh /run-httpd.sh
